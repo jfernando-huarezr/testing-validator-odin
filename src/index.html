@@ -6,6 +6,48 @@
   <title>Template</title>
 </head>
 <body>
-  
+  <section>
+    <form action="">
+      <h2>Insert this info please</h2>
+      <p class="spacing">All this fields are required</p>
+        <label for="mail">
+          <p class="spacing">Email:
+          <strong><abbr title="required">*</abbr></strong></p>
+        </label>
+        <input id="mail" name="usermail" />
+        <span class="error" aria-live="polite"></span>
+        <label for="country">
+          <p class="spacing">Country:</p>
+        </label>
+        <select id="country" name="usercountry">
+          <option value="US">United States of America</option>
+          <option value="CA">Canada</option>
+          <option value="GB">United Kingdom</option>
+        </select>
+        <label for="zip">
+          <p class="spacing">ZIP Code:
+          <strong><abbr title="required">*</abbr></strong></p>
+        </label>
+        <input id="zip" name="userzip" />
+        <span class="error" aria-live="polite"></span>
+        <label for="pwd">
+          <p class="spacing">Password:
+          <strong><abbr title="required">*</abbr></strong></p>
+        </label>
+        <input type="password" id="pwd" name="password" />
+        <span class="error" aria-live="polite"></span>
+      </p>
+        <label for="confirmpwd">
+          <p class="spacing">Confirm Password:
+          <strong><abbr title="required">*</abbr></strong></p>
+        </label>
+        <input type="password" id="confirmpwd" name="confirmpassword" />
+        <span class="error" aria-live="polite"></span>
+
+      <p class="spacing"><button type="submit">Submit</button></p>
+    </form>
+
+    <script src="./main.js"></script>
+  </section>
 </body>
 </html>
